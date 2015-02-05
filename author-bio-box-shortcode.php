@@ -14,7 +14,7 @@ Domain Path: /languages
 class Author_Bio_Box_Shortcode {
 
 	/* Shortcode */
-	const SHORTCODE = 'biobox';
+	const SHORTCODE = 'authorbio';
 
 	/* Define and register singleton */
 	private static $instance = false;
