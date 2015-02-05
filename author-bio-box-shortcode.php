@@ -49,7 +49,10 @@ class Author_Bio_Box_Shortcode {
 	 * @return null
 	 */
 	public function action_init_register_shortcode() {
-		add_shortcode( self::SHORTCODE, array( $this, 'do_shortcode' ) );
+		if ( shortcode_exists( self::SHORTCODE ) ) {
+			add_shortcode( self::SHORTCODE, array( $this, 'do_shortcode' ) );
+		}
+
 	}
 	/**
 	 * Render a iframe shortcode
