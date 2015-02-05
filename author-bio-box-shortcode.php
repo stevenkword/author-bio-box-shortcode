@@ -59,8 +59,8 @@ class Author_Bio_Box_Shortcode {
 	 */
 	function do_shortcode( $atts ) {
 		if ( function_exists( 'get_author_bio_box' ) ) {
-        	echo get_author_bio_box();
-    	}
+			echo get_author_bio_box();
+		}
 	}
 
 
